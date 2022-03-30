@@ -9,7 +9,6 @@ wget https://raw.githubusercontent.com/rushia727/gentoo-android/main/start-gento
 chmod +x start-gentoo.sh
 
 unset LD_PRELOAD
-export GENTOO=/data/data/com.termux/gentoo
 export EPREFIX=/data/gentoo64
 
 proot --link2symlink -r $GENTOO -0 -w / \
