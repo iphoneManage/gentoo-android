@@ -16,8 +16,7 @@ proot --link2symlink -r $GENTOO -0 -w / \
     -b /dev -b /proc -b /sys \
     $EPREFIX/bin/sh -c \
     "HOME=$EPREFIX/root $EPREFIX/startprefix"
-
-export EPREFIX=/data/gentoo64
+    
 mkdir $EPREFIX/etc/portage/repos.conf
 cat $EPREFIX/usr/share/portage/config/repos.conf > $EPREFIX/etc/portage/repos.conf/gentoo.conf
 emerge-webrsync
