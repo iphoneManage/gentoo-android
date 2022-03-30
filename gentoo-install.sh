@@ -1,3 +1,4 @@
+#!/bin/bash
 pkg install proot
 export GENTOO=/data/data/com.termux/gentoo
 mkdir -p $GENTOO/data
@@ -6,8 +7,6 @@ proot --link2symlink tar -C $GENTOO/data -xf prefix-stage3-arm64-20200704.tar.xz
 
 wget https://raw.githubusercontent.com/rushia727/gentoo-android/main/start-gentoo.sh
 chmod +x start-gentoo.sh
-
-#!/bin/bash
 
 unset LD_PRELOAD
 export GENTOO=/data/data/com.termux/gentoo
